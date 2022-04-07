@@ -1,4 +1,3 @@
-import 'package:event_manager_app/screens/Login.dart';
 import 'package:event_manager_app/screens/login.dart';
 import 'package:flutter/material.dart';
 import 'package:event_manager_app/globals/colours.dart';
