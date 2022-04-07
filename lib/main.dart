@@ -7,9 +7,9 @@ void main() {
     MaterialApp(
       theme: ThemeData(
         colorScheme: ColorScheme.fromSwatch(
-          primarySwatch: Colors.cyan,
+          primarySwatch: Colors.deepPurple,
         ).copyWith(
-          secondary: Colors.cyanAccent
+          secondary: Colors.purple,
         )
       ),
       home: const MyApp(),
