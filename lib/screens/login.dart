@@ -1,5 +1,6 @@
 import 'package:event_manager_app/globals/decorations.dart';
 import 'package:flutter/material.dart';
+import 'package:event_manager_app/screens/signup.dart';
 import 'package:flutter_signin_button/flutter_signin_button.dart';
 
 class Login extends StatefulWidget {
@@ -156,7 +157,14 @@ class _LoginState extends State<Login> {
                                   height: screenSize['height'] * 0.02,
                                 ),
                                 TextButton(
-                                    onPressed: (){},
+                                    onPressed: (){
+                                      setState(() {
+                                        Navigator.push(
+                                          context,
+                                          MaterialPageRoute(builder: (context) => const SignUp()),
+                                        );
+                                      });
+                                    },
                                     child: const Text(
                                       "Don't Have an account? Sign Up!"
                                     ),
