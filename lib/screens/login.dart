@@ -1,7 +1,6 @@
 import 'package:event_manager_app/globals/decorations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_signin_button/flutter_signin_button.dart';
-import 'package:event_manager_app/main.dart';
 
 class Login extends StatefulWidget {
   const Login({Key? key}) : super(key: key);
