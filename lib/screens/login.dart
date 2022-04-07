@@ -59,7 +59,7 @@ class _LoginState extends State<Login> {
                           padding: EdgeInsets.symmetric(
                             horizontal: screenSize['width']*0.1
                           ),
-                          height: screenSize['height']*0.45,
+                          height: screenSize['height']*0.50,
                           width: double.infinity,
                           decoration: const BoxDecoration(
                             borderRadius: BorderRadius.only(
@@ -122,14 +122,7 @@ class _LoginState extends State<Login> {
                                   height: screenSize['height'] * 0.03,
                                 ),
                                 ElevatedButton(
-                                    onPressed: () {
-                                      setState(() {
-                                        Navigator.pop(
-                                            context,
-                                            // MaterialPageRoute(builder: (context) => const MyApp())
-                                        );
-                                      });
-                                    },
+                                    onPressed: (){},
                                     child: Container(
                                       width: 150.0,
                                       alignment: Alignment.center,
@@ -159,6 +152,15 @@ class _LoginState extends State<Login> {
                                   Buttons.Google,
                                   onPressed: (){},
                                 ),
+                                SizedBox(
+                                  height: screenSize['height'] * 0.02,
+                                ),
+                                TextButton(
+                                    onPressed: (){},
+                                    child: const Text(
+                                      "Don't Have an account? Sign Up!"
+                                    ),
+                                )
                               ],
                             ),
                           ),
