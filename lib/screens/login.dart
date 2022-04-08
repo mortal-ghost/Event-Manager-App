@@ -1,5 +1,6 @@
 import 'package:event_manager_app/globals/decorations.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_signin_button/flutter_signin_button.dart';
 
 class Login extends StatefulWidget {
   const Login({Key? key}) : super(key: key);
@@ -99,7 +100,7 @@ class _LoginState extends State<Login> {
                                   decoration: textInputDecoration.copyWith(
                                       labelText: "Password",
                                       prefixIcon: const Icon(Icons.lock),
-                                      suffix: IconButton(
+                                      suffixIcon: IconButton(
                                           icon: eyeIcon(),
                                         onPressed: togglePass,
                                       )
@@ -116,11 +117,44 @@ class _LoginState extends State<Login> {
                                       return "Password must be of minimum 8 characters!";
                                     }
                                   },
+                                ),
+                                SizedBox(
+                                  height: screenSize['height']*0.03,
+                                ),
+                                ElevatedButton(
+                                    onPressed: () {},
+                                    child: Container(
+                                      padding: const EdgeInsets.all(10.0),
+                                      decoration: const BoxDecoration(
+                                        borderRadius: BorderRadius.all(Radius.circular(20.0)),
+                                      ),
+                                      child: const Text(
+                                          "Login",
+                                          style: TextStyle(
+                                            fontSize: 18.0,
+                                            fontWeight: FontWeight.bold
+                                          ),
+                                      ),
+                                    )
+                                ),
+                                SizedBox(
+                                  height: screenSize['height']*0.025,
+                                ),
+                                SignInButton(
+                                  Buttons.Google,
+                                  onPressed: () {},
+                                ),
+                                SizedBox(
+                                  height: screenSize['height']*0.02,
+                                ),
+                                TextButton(
+                                    onPressed: () {},
+                                    child: const Text("Don't have an account? Sign Up!")
                                 )
                               ],
                             ),
                           ),
-                        )
+                        ),
                       ],
                     ),
                   ),

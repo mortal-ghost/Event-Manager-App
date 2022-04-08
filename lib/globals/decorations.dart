@@ -19,5 +19,5 @@ const textInputDecoration = InputDecoration(
   labelStyle: TextStyle(
     fontSize: 18.0,
     color: Colors.black,
-  )
+  ),
 );
